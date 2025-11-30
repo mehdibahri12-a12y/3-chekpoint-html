@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            display: flex;
+            background-color: rgba(134, 174, 181);
+            justify-content: center;
+            align-items: center;
+        }
+
+        #portfolio-page {
+            background-color: white;
+            border: 2px solid black;
+            padding: 30px;
+            width: 80%;
+            position: relative;
+        }
+
+        header img {
+            float: right; /* Float pushes the image to the right and lets text flow around it */
+            margin-top: -85px; /* Negative margin moves the image slightly upward */
+            width: 260px;
+            height: 240px;
+            object-fit: cover;
+            border: 1px solid black;
+        }
+
+        header h1 {
+            margin-top: 0;
+        }
+
+        header h3 {
+            margin-bottom: 0;
+        }
+
+        header p {
+            text-align: center;
+        }
+
+        .highlight { /* Used to style specific important words inside the intro paragraph */
+            font-weight: 600;
+            color: rgba(134, 174, 181);
+            letter-spacing: 0.5px;
+        } 
+
+        nav h3 {
+            margin-bottom: 10px;
+        }
+
+        .nav-links {
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        main h3 {
+            background-color: rgba(134, 174, 181);
+        }
+
+        .table {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: rgba(134, 174, 181);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="portfolio-page"> <!-- Page container centered with flexbox, wraps the whole portfolio and keeps it centered -->
+
+        <header>
+            <h3>Hi ! I'm Nick, and</h3>
+            <h1>Welcome To My Portfolio</h1>
+            <img src="https://imgs.search.brave.com/6t3TdRBjdfM5vsrbkD-jszTZQrIK8q0V2Er4y3J1j5E/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMjE4/NjM4Mzk4My9waG90/by9wb3J0cmFpdC1j/cmVhdGl2ZS1hbmQt/bWFuLWZvci1wcmlk/ZS1pbi1vZmZpY2Ut/b2YtYWJvdXQtdXMt/c3RhcnR1cC1ncm93/dGgtYW5kLWNhcmVl/ci1hbWJpdGlvbi5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/OGhjQTJGak9iNFlK/VjhJdUJYWm9mbzlh/aVFCWlBiT3dpR2RW/cmNTWXZZND0"
+                alt="error">
+            <p>
+                <span class="highlight">Front-End Developer</span> crafting clean, modern & interactive web
+                experiences. <br>
+                I turn ideas into
+                <span class="highlight">fast</span>,
+                <span class="highlight">beautiful</span>,
+                <span class="highlight">responsive</span> products. <br>
+                <span class="highlight">Based in Barcelona</span>. Available for <span class="highlight">freelance
+                    projects</span>.
+            </p>
+        </header>
+
+        <nav>
+            <h3>Navigation Items</h3>
+            <div class="nav-links"> <!-- Each <a> uses Font Awesome icons + internal section anchors -->
+                <a href="#about-section"><i class="fa-solid fa-user"></i>About Me</a>
+                <a href="#work-section"><i class="fa-solid fa-briefcase"></i>My Work Experiences</a>
+                <a href="#resume-section"><i class="fa-solid fa-file-lines"></i>My Resume</a>
+                <a href="#contact-section"><i class="fa-solid fa-address-book"></i>Contact</a>
+            </div>
+        </nav>
+
+        <br><br>
+
+        <main>
+            <section id="about-section">
+                <h3>About Me</h3>
+                <p>Hi, I'm Nick Reyes, a front-end developer with a passion for mixing design, code, and creativity. I
+                    originally started my journey in music production, but eventually fell in love with programming when
+                    I realized I could bring ideas to life visually on the web. Today, I specialize in building simple,
+                    elegant, and interactive interfaces using HTML, CSS, and JavaScript. <br>
+                    When I'm not coding, you'll find me exploring new cafés in Barcelona, recording small ambient music
+                    loops, or experimenting with Web Audio API for fun.</p>
+                <b>My current tech stack</b>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React</li>
+                    <li>TailwindCSS</li>
+                    <li>Figma</li>
+                </ul>
+                <b>My hobbies</b>
+                <ul>
+                    <li>Producing ambient music</li>
+                    <li>Photography</li>
+                    <li>Skateboarding</li>
+                    <li>Exploring new UI trends</li>
+                </ul>
+            </section>
+            <section id="work-section">
+                <h3>My Work Experiences</h3>
+                <p>Over the last few years, I've collaborated with startups, small businesses, and creative studios to
+                    build websites, dashboards, and branded digital experiences. Here's a quick overview of my journey:
+                </p>
+                <div class="table">
+                    <table border="2" cellpadding="5">
+                        <thead>
+                            <th>Year</th>
+                            <th>Company</th>
+                            <th>Role</th>
+                            <th>Description</th>
+                        </thead>
+                        <tr>
+                            <td>2023-2024</td>
+                            <td>PixelRiver Studio</td>
+                            <td>Front-End Developer</td>
+                            <td>Built landing pages, animations, and dashboards for SaaS clients.</td>
+                        </tr>
+                        <tr>
+                            <td>2022-2023</td>
+                            <td>Freelance</td>
+                            <td>Web Designer / Developer</td>
+                            <td>Designed and developed websites for personal brands & cafés in Barcelona.</td>
+                        </tr>
+                        <tr>
+                            <td>2021-2022</td>
+                            <td>Nova Creatives</td>
+                            <td>Junior Developer</td>
+                            <td>Assisted with UI components, code maintenance, and website updates.</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section id="resume-section">
+                <h3>My Resume</h3>
+                <b>Professional Summary:</b>
+                <p>Front-End Developer with 4+ years of experience turning ideas into usable digital products. Skilled
+                    in responsive design, UI animations, and creating delightful user interfaces. Strong foundation in
+                    JavaScript, component architecture, and performance optimization.</p>
+                <b>Highlights:</b>
+                <ul type="square">
+                    <li>Built 20+ client websites</li>
+                    <li>Designed & coded 10 landing pages with conversion-focused UI</li>
+                    <li>Experience working with creative teams & startups</li>
+                    <li>Passion for clean, minimalistic design</li>
+                </ul>
+                <p>Here's a small ambient loop I produced — a reminder of where my creative journey started.</p>
+                <audio controls>
+                    <source src="flute-rain-flute-loop-ambient-short-loop-340800.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+            <section id="contact-section">
+                <h3>Contact</h3>
+                <p>If you'd like to collaborate, have a project in mind, or just want to say hi — feel free to send me a
+                    message. I usually reply within 24 hours.</p>
+                <form> <!-- Label 'for' attribute links to input 'id' for accessibility, 'name' attribute is used when submitting form data -->
+                    <label for="name">Your Name</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Your Email</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <br><br>
+
+        <footer>
+            <p>© 2025 Nick Reyes — Front-End Developer <br>
+                Crafted with ❤️ in Barcelona. <br>
+                Follow me: <a href="">Instagram</a> · <a href="">GitHub</a> · <a href="">LinkedIn</a></p>
+        </footer>
+
+    </div>
+</body>
+
+
+
+</html>
